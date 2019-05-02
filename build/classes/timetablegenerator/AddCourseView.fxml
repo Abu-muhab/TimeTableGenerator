@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<fx:root maxHeight="505.0" maxWidth="596.0" minHeight="505.0" minWidth="596.0" prefHeight="505.0" prefWidth="596.0" style="-fx-background-color: grey;" type="Pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="153.0" prefWidth="596.0" style="-fx-background-color: #5a265b;" />
+      <Pane layoutX="92.0" layoutY="98.0" prefHeight="348.0" prefWidth="410.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="186.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@google-drive-document.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="170.0" layoutY="59.0" text="Add a course" textFill="#5a265b" />
+            <JFXTextField fx:id="courseCodeField" focusColor="#5a265b" layoutX="137.0" layoutY="109.0" onKeyPressed="#enterButtonPressed" promptText="Course code" unFocusColor="#5a265b" />
+            <JFXTextField fx:id="nameField" focusColor="#5a265b" layoutX="138.0" layoutY="153.0" onKeyPressed="#enterButtonPressed" promptText="Title" unFocusColor="#5a265b" />
+            <ChoiceBox fx:id="semesterCombo" layoutX="137.0" layoutY="193.0" prefWidth="150.0" style="-fx-background-color: #5a265b;" stylesheets="@Style.css" />
+            <ChoiceBox fx:id="levelCombo" layoutX="137.0" layoutY="229.0" prefWidth="150.0" style="-fx-background-color: #5a265b;" stylesheets="@Style.css" />
+            <JFXButton fx:id="addButton" layoutX="185.0" layoutY="309.0" onMouseClicked="#addButtonClicked" style="-fx-background-color: #5a265b;" text="Add" textFill="#000003" />
+            <JFXTextField fx:id="unitField" layoutX="137.0" layoutY="261.0" onKeyPressed="#enterButtonPressed" prefHeight="25.0" prefWidth="61.0" promptText="unit(s)" />
+         </children>
+      </Pane>
+   </children>
+</fx:root>

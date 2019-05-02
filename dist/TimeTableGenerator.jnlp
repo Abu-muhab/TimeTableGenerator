@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TimeTableGenerator.jnlp">
+  <information>
+    <title>TimeTableGenerator</title>
+    <vendor>Abdulmalik Abubakar</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TimeTableGenerator.jar" size="69280" download="eager" />
+    <jar href="lib/c3p0-0.9.1-pre6.jar" size="531005" download="eager" />
+    <jar href="lib/jboss-common-jdbc-wrapper-src.jar" size="35342" download="eager" />
+    <jar href="lib/jboss-common-jdbc-wrapper.jar" size="50184" download="eager" />
+    <jar href="lib/jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib/mysql-connector-java-8.0.15.jar" size="2134905" download="eager" />
+    <jar href="lib/protobuf-java-3.6.1.jar" size="1421323" download="eager" />
+    <jar href="lib/slf4j-api-1.6.1.jar" size="25496" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TimeTableGenerator" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="timetablegenerator.TimeTableGenerator"  name="TimeTableGenerator" />
+  <update check="always"/>
+</jnlp>

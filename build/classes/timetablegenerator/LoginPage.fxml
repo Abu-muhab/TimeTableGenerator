@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="310.0" prefWidth="638.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timetablegenerator.LoginPage">
+   <children>
+      <Pane prefHeight="54.0" prefWidth="638.0" style="-fx-background-color: #5a265b;" AnchorPane.bottomAnchor="256.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="1.0" prefHeight="53.0" prefWidth="228.0" text="Admin Log-in" textFill="#030303">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="14.0" layoutY="63.0" prefHeight="110.0" prefWidth="118.0" style="-fx-background-color: #5a265b;" />
+      <Pane layoutX="145.0" layoutY="63.0" prefHeight="110.0" prefWidth="118.0" style="-fx-background-color: #5a265b;" />
+      <Pane layoutX="145.0" layoutY="186.0" prefHeight="110.0" prefWidth="118.0" style="-fx-background-color: #5a265b;" />
+      <Pane layoutX="14.0" layoutY="186.0" prefHeight="110.0" prefWidth="118.0" style="-fx-background-color: #5a265b;" />
+      <Pane id="LoginPane" fx:id="loginPane" layoutX="286.0" layoutY="63.0" maxHeight="236.0" maxWidth="461.0" minHeight="236.0" minWidth="298.0" prefHeight="236.0" prefWidth="298.0" stylesheets="@Style.css">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="96.0" layoutX="104.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@round-account-button-with-user-inside.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="usernameField" focusColor="#5a265b" layoutX="84.0" layoutY="93.0" onKeyPressed="#user_password_valueEntered" promptText="User" unFocusColor="#5a265b" />
+            <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="62.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user-shape.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="passwordField" focusColor="#5a265b" layoutX="84.0" layoutY="132.0" onKeyPressed="#user_password_valueEntered" promptText="Password" unFocusColor="#5a265b" />
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="62.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@https-symbol.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="loginButton" layoutX="116.0" layoutY="176.0" onMouseClicked="#loginButtonClicked" styleClass="Buttons" stylesheets="@Style.css" text="log-in" textFill="#0d0d0d" />
+            <Label fx:id="loginErrorText" layoutX="77.0" layoutY="214.0" text="invalid login credencials" textFill="#dd2525" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

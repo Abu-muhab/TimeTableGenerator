@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="527.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="6.0" text="CPE223" />
+      <Label layoutX="137.0" layoutY="8.0" />
+      <CheckBox layoutX="129.0" layoutY="7.0" mnemonicParsing="false" text="First Semester" />
+      <CheckBox layoutX="300.0" layoutY="7.0" mnemonicParsing="false" text="Second Semester" />
+   </children>
+</fx:root>
