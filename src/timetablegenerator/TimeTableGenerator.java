@@ -28,7 +28,7 @@ public class TimeTableGenerator extends Application {
         root1 = FXMLLoader.load(getClass().getResource("LoginPage.fxml"));
         root2 = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
-        Scene scene = new Scene(root2);
+        Scene scene = new Scene(root1);
         
         this.stage=stage;
         stage.setResizable(false);
